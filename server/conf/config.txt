@@ -1,0 +1,5 @@
+db_user = tim
+db_password = tim
+ds_number = ds227110
+port = 27110
+db_name = mashup

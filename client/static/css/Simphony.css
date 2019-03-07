@@ -1,0 +1,179 @@
+/** GENERAL LAYOUT **/
+:root {
+  --jumbotron-padding-y: 1rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 20rem;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+/**GRID CARDS**/ 
+
+* {box-sizing:border-box; }
+
+/* Slideshow container */
+/* .slideshow-container {
+  max-width: 250px;
+  position: relative;
+  margin: auto;
+} */
+.image-checkbox
+    {
+        cursor: pointer;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 4px solid transparent;
+        outline: 0;
+    }
+
+        .image-checkbox input[type="checkbox"]
+        {
+            display: none;
+        }
+
+    .image-checkbox-checked
+    {
+        border-color: #f58723;
+    }
+
+    .text_overlay {
+      opacity: 0;
+      position: absolute;
+      top: 10;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 25%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 15px;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -ms-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+    }
+    .image-checkbox:hover .text_overlay,
+    .image-checkbox.active .text_overlay {
+      opacity: 1;
+    }
+
+    .overlay-text {
+      text-align: center;
+      font-size: 18px;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+/** FOOTER BUTTON **/
+.container{
+  text-align: center;
+}
+.gen_playlist_button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+  margin:auto;
+  display: block;
+  font-size: 16px;
+  width:50%;
+}
+
+.download_playlist_button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+  margin:auto;
+  display: block;
+  font-size: 16px;
+  width:100%;
+}
+
+#controls {
+  width: 100%;
+}
+
+#controls .gen_playlist_button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+  margin:auto;
+  font-size: 16px;
+  width:23%;
+  display: inline-block;
+}
+
+.gen_playlist_button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+  

@@ -1,0 +1,15 @@
+flask
+flask_restful
+mongoengine
+httplib2
+google
+requests
+configparser
+oauth2client
+apiclient
+flask_cors
+opencv-python
+plotly
+kaggle
+dicttoxml
+pandas

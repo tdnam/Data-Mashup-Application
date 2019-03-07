@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Album example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="../static/css/Simphony.css" rel="stylesheet">
+    <script src="../static/js/Simphony.js"></script>
+  </head>
+
+  <body>
+          <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <h4 class="text-white">About</h4>
+                  <p class="text-muted">2018S1 COMP9321 Assignment 3.<br>
+                                          Joachim: z5177766<br>
+                                          Tim: z5198523<br>
+                                          Nam: z5090191<br>
+                                          David Wong: z3449265</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark sticky-top bg-dark ">
+            <div class="container d-flex justify-content-between">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+                <strong>Simphony Park</strong>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+
+    <main role="main " >
+        <section class="jumbotron text-center">
+            <div class="container">
+                <img class="card-img-top" src="../static/img/logo.png" alt="Card image cap">
+              <h1 class="jumbotron-heading">Simphony Park</h1>
+              <p class="lead text-muted">Pick your favourite characters and generate a playlist! </p>
+            </div>
+          </section>
+
+          <div class="container" id="feed">
+            <!-- The feed will show here -->
+          </div>
+
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container" id="myFooter">
+
+        <p class="float-right">
+          <a href="#">Back to top</a>
+            <br>
+            <a href="" onclick="analytics();">The Simpsons Ranking</a>
+        </p>
+
+        <p class="float-left">
+          <button class="download_playlist_button" onclick="download_playlist();">Download Playlist</button>
+        </p>
+
+        <button class="gen_playlist_button" onclick="get_character();">Generate Playlist</button>
+        <p></p>
+        <div id='video'></div>
+
+        <div id="controls" style="display: none;">
+            <button class="gen_playlist_button" onclick="play_previous_song();" >Previous Song</button>
+            <button class="gen_playlist_button" onclick="pause_current_song();">Pause</button>
+            <button class="gen_playlist_button" onclick="resume_current_song();">Resume</button>
+            <button class="gen_playlist_button" onclick="play_next_song();">Next Song</button>
+        </div>
+
+      </div>
+      <p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
